@@ -86,7 +86,6 @@ app.get("/listStudents", async function (req, res) {
 
   res.setHeader("Content-Type", "application/json");
   res.end(JSON.stringify(data));
-  console.log(req.body)
 });
 
 app.post("/getStudentInfo", async function (req, res) {
