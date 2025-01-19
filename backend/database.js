@@ -17,6 +17,7 @@ function init(db) {
 }
 
 const knex_db = require("./db-config");
+const testBase = require("./test/testBase");
 
 const dbinitialize = async () => {
     testBase.resetDatabase(knex_db);
@@ -163,6 +164,7 @@ const deleteStudent = async (id) => {
 }
 
 module.exports = {
+    dbinitialize,
     readTeachers,
     readStudents,
     addStudent,
