@@ -2,7 +2,6 @@ import { Selector } from 'testcafe';
 process.env.NODE_ENV = "test";
 
 fixture`Testing Student UI`
-    .page`http://localhost:4401`
 
 test('Testing add students', async t => {
     await t.expect(true).ok();
